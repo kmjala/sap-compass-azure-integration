@@ -1,0 +1,39 @@
+{
+  "OrderID": "1004157",
+  "Plant": "1015",
+  "OrderOperation": "0030",
+  "Sequence": "00",
+  "ConfirmationYieldQuantity": "0",
+  "ConfirmationScrapQuantity": "0",
+  "IsFinalConfirmation": true,
+  "FinalConfirmationType": "X",
+  "to_ProdnOrdConfMatlDocItm": [
+    {
+      "OrderID": "1004157",
+      "OrderItem": "0001",
+      "Material": "VE0020GMC",
+      "Plant": "1015",
+      "StorageLocation": "2000",
+      "GoodsMovementType": "102",
+      "GoodsMovementRefDocType": "F",
+      "EntryUnit": "EA",
+      "QuantityInEntryUnit": "300",
+      "Batch": "AG0000026",
+      "EWMStorageBin": "GR-ZONE2",
+      "EWMWarehouse": "1015",
+      "ManufactureDate": "/Date(981173106789)/",
+      "to_ProdnOrderConfBatchCharc": [
+        {
+          "Characteristic": "ZLOBM_PARENTBATCH",
+          "CharcValue": "AG0000026"
+        }
+      ]
+    }
+  ],
+  "OpConfirmedWorkQuantity1": "0.000",
+  "OpConfirmedWorkQuantity2": "0.015",
+  "OpConfirmedWorkQuantity3": "0.015",
+  "OpConfirmedWorkQuantity4": "0.000",
+  "OpConfirmedWorkQuantity5": "0.000",
+  "OpConfirmedWorkQuantity6": "0.000"
+}

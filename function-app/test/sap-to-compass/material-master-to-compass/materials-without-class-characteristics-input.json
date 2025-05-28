@@ -1,0 +1,19 @@
+{
+  "Product": "VE2021",
+  "BaseUnit": "EA",
+  "ProductDescription": [
+    {
+      "Language": "EN",
+      "ProductDescription": "GORE Automotive Vents"
+    }
+  ],
+  "PlantData": [
+    {
+      "CountryOfOrigin": "DE",
+      "GoodsReceiptDuration": 0,
+      "Plant": "1015",
+      "ProcurementType": "E",
+      "ProfileCode": "G3"
+    }
+  ]
+}

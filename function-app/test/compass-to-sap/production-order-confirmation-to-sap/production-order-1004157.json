@@ -1,0 +1,118 @@
+{
+  "d": {
+    "__metadata": {
+      "id": "https://devs4dba.wlgore.com:44300/sap/opu/odata/sap/API_PRODUCTION_ORDER_2_SRV/A_ProductionOrder_2('1004157')",
+      "uri": "https://devs4dba.wlgore.com:44300/sap/opu/odata/sap/API_PRODUCTION_ORDER_2_SRV/A_ProductionOrder_2('1004157')",
+      "type": "API_PRODUCTION_ORDER_2_SRV.A_ProductionOrder_2Type",
+      "etag": "W/\"'20241016064642'\""
+    },
+    "ManufacturingOrder": "1004157",
+    "ManufacturingOrderCategory": "10",
+    "ManufacturingOrderType": "ZG01",
+    "OrderLongText": "",
+    "ManufacturingOrderImportance": "",
+    "OrderIsCreated": "",
+    "OrderIsReleased": "X",
+    "OrderIsPrinted": "",
+    "OrderIsConfirmed": "",
+    "OrderIsPartiallyConfirmed": "X",
+    "OrderIsDelivered": "",
+    "OrderIsDeleted": "",
+    "OrderIsPreCosted": "X",
+    "SettlementRuleIsCreated": "X",
+    "OrderIsPartiallyReleased": "",
+    "OrderIsLocked": "",
+    "OrderIsTechnicallyCompleted": "",
+    "OrderIsClosed": "",
+    "OrderIsPartiallyDelivered": "X",
+    "OrderIsMarkedForDeletion": "",
+    "SettlementRuleIsCrtedManually": "",
+    "OrderIsScheduled": "",
+    "OrderHasGeneratedOperations": "",
+    "OrderIsToBeHandledInBatches": "X",
+    "MaterialAvailyIsNotChecked": "",
+    "MfgOrderCreationDate": "/Date(1728432000000)/",
+    "MfgOrderCreationTime": "PT13H30M49S",
+    "LastChangeDateTime": "20241016064642",
+    "Material": "VE0020GMC",
+    "StorageLocation": "2000",
+    "GoodsRecipientName": "",
+    "UnloadingPointName": "",
+    "InventoryUsabilityCode": "",
+    "MaterialGoodsReceiptDuration": "0",
+    "QuantityDistributionKey": "",
+    "StockSegment": "",
+    "OrderInternalBillOfOperations": "4258",
+    "ProductionPlant": "1015",
+    "Plant": "1015",
+    "MRPArea": "1015",
+    "MRPController": "159",
+    "ProductionSupervisor": "Z01",
+    "ProductionVersion": "0001",
+    "PlannedOrder": "",
+    "SalesOrder": "",
+    "SalesOrderItem": "0",
+    "BasicSchedulingType": "2",
+    "ManufacturingObject": "OR000001004157",
+    "ProductConfiguration": "0",
+    "OrderSequenceNumber": "0",
+    "BusinessArea": "",
+    "CompanyCode": "1001",
+    "ProfitCenter": "100116",
+    "ActualCostsCostingVariant": "PPP2",
+    "PlannedCostsCostingVariant": "PPP1",
+    "FunctionalArea": "G120",
+    "MfgOrderPlannedStartDate": "/Date(1728864000000)/",
+    "MfgOrderPlannedStartTime": "PT00H00M00S",
+    "MfgOrderPlannedEndDate": "/Date(1736899200000)/",
+    "MfgOrderPlannedEndTime": "PT00H00M00S",
+    "MfgOrderScheduledStartDate": "/Date(1728864000000)/",
+    "MfgOrderScheduledStartTime": "PT13H45M22S",
+    "MfgOrderScheduledEndDate": "/Date(1736812800000)/",
+    "MfgOrderScheduledEndTime": "PT11H31M40S",
+    "MfgOrderActualReleaseDate": "/Date(1728432000000)/",
+    "ProductionUnit": "EA",
+    "ProductionUnitISOCode": "EA",
+    "ProductionUnitSAPCode": "EA",
+    "TotalQuantity": "1000",
+    "MfgOrderPlannedScrapQty": "0",
+    "MfgOrderConfirmedYieldQty": "302",
+    "CustomerName": "",
+    "WBSElementExternalID": "",
+    "to_ProductionOrderComponent": {
+      "__deferred": {
+        "uri": "https://devs4dba.wlgore.com:44300/sap/opu/odata/sap/API_PRODUCTION_ORDER_2_SRV/A_ProductionOrder_2('1004157')/to_ProductionOrderComponent"
+      }
+    },
+    "to_ProductionOrderComponentExt": {
+      "__deferred": {
+        "uri": "https://devs4dba.wlgore.com:44300/sap/opu/odata/sap/API_PRODUCTION_ORDER_2_SRV/A_ProductionOrder_2('1004157')/to_ProductionOrderComponentExt"
+      }
+    },
+    "to_ProductionOrderComponentExt4": {
+      "__deferred": {
+        "uri": "https://devs4dba.wlgore.com:44300/sap/opu/odata/sap/API_PRODUCTION_ORDER_2_SRV/A_ProductionOrder_2('1004157')/to_ProductionOrderComponentExt4"
+      }
+    },
+    "to_ProductionOrderItem": {
+      "__deferred": {
+        "uri": "https://devs4dba.wlgore.com:44300/sap/opu/odata/sap/API_PRODUCTION_ORDER_2_SRV/A_ProductionOrder_2('1004157')/to_ProductionOrderItem"
+      }
+    },
+    "to_ProductionOrderOperation": {
+      "__deferred": {
+        "uri": "https://devs4dba.wlgore.com:44300/sap/opu/odata/sap/API_PRODUCTION_ORDER_2_SRV/A_ProductionOrder_2('1004157')/to_ProductionOrderOperation"
+      }
+    },
+    "to_ProductionOrderStatus": {
+      "__deferred": {
+        "uri": "https://devs4dba.wlgore.com:44300/sap/opu/odata/sap/API_PRODUCTION_ORDER_2_SRV/A_ProductionOrder_2('1004157')/to_ProductionOrderStatus"
+      }
+    },
+    "to_ProductionRsceTools": {
+      "__deferred": {
+        "uri": "https://devs4dba.wlgore.com:44300/sap/opu/odata/sap/API_PRODUCTION_ORDER_2_SRV/A_ProductionOrder_2('1004157')/to_ProductionRsceTools"
+      }
+    }
+  }
+}

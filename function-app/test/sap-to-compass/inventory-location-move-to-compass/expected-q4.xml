@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root TransactionType="ipdERPLotMasterUpdate">
+  <UnitStart>
+    <BranchPlant>B024</BranchPlant>
+    <Container>0000004083</Container>
+    <Product>TP10935-17.15</Product>
+    <Qty>2000</Qty>
+    <UOM>MT</UOM>
+    <Location>DCAXLEVENT-01</Location>
+    <Status>X</Status>
+    <MemoLot1 />
+    <MemoLot2 />
+    <MemoLot3 />
+    <SupplierLot>000123456</SupplierLot>
+    <Shipped />
+    <ExpirationDate></ExpirationDate>
+    <SellByDate />
+    <Source />
+  </UnitStart>
+</Root>

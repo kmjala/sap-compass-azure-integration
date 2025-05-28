@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root TransactionType="ERPRouteChange">
+  <Name>1003981</Name>
+  <Revision>1</Revision>
+  <Description />
+  <Notes />
+  <Status>1</Status>
+  <EOC />
+  <Product>MZ-FG-C900</Product>
+  <ERPItem />
+  <RouteStepDelete>
+    <StepIndex />
+  </RouteStepDelete>
+  <RouteStepAdd>
+    <StepName>CUT04</StepName>
+    <Operation />
+    <Sequence>10</Sequence>
+    <StepDescription>my MfgOrderOperationText</StepDescription>
+    <WCStartDate>2024-09-13</WCStartDate>
+    <WCEndDate>2024-09-14</WCEndDate>
+    <OperationStatus>10</OperationStatus>
+    <PlannedQuantity>100</PlannedQuantity>
+    <CompletedQuantity>0</CompletedQuantity>
+  </RouteStepAdd>
+</Root>

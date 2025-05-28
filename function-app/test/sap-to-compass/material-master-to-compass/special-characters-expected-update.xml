@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root TransactionType="ERPProductChange">
+  <ProductInfo>
+    <Product><![CDATA[VE2021@#$%^&*()[\/:*?""<>|]meh]]></Product>
+    <Revision>1</Revision>
+    <ERPDescription><![CDATA[GORE Automotive Vents]]></ERPDescription>
+    <PrimaryUOM>EA</PrimaryUOM>
+    <CountryOfOrigin>DE</CountryOfOrigin>
+  </ProductInfo>
+</Root>

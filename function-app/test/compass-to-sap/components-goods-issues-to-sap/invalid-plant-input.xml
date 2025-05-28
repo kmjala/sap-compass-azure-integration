@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-16"?>
+<TxnList count="3">
+  <TxnWrapper>
+    <UserName>jrbailey</UserName>
+    <GroupName>FH Lamination</GroupName>
+    <TxnGUID></TxnGUID>
+    <FileGuid>my-file-guid</FileGuid>
+    <Txn>
+      <Request xmlns="http://e1.oracle.com/WIM">
+        <MessageHeader xmlns="">
+          <Environment>VAL_OSB</Environment>
+          <MessageType>WorkOrderIssues</MessageType>
+          <MessageID>123456</MessageID>
+          <MessageVersion>1.0</MessageVersion>
+          <MessageReferenceID>REF1</MessageReferenceID>
+          <UserID>VAL_OSBUSER</UserID>
+          <UserPassword>transact</UserPassword>
+          <SourceSystemName>COMPASS</SourceSystemName>
+          <Operation>IPDB005</Operation>
+        </MessageHeader>
+        <MessageDetail xmlns="">
+          <cdcLINKActionCode_EV01>0</cdcLINKActionCode_EV01>
+          <szUserId_USER>VAL_OSBUSER</szUserId_USER>
+          <szWorkStationId_JOBN>someIPDEI</szWorkStationId_JOBN>
+          <mnJobNumber_JOBS>*JOBS=pdapps.E1_DSI_SEQN</mnJobNumber_JOBS>
+          <szVersion_VERS>IPD0001X</szVersion_VERS>
+          <szBranchPlant_MCU>BXYZ</szBranchPlant_MCU>
+          <mnDocumentOrderInvoiceE_DOCO>8822340</mnDocumentOrderInvoiceE_DOCO>
+          <mnQuantityToIssue_QNTOW>983</mnQuantityToIssue_QNTOW>
+          <szItemNoUnknownFormat_UITM>10132564</szItemNoUnknownFormat_UITM>
+          <mnSequenceNoOperations_OPSQ>10.00</mnSequenceNoOperations_OPSQ>
+          <szBranchComponent_CMCU>B005</szBranchComponent_CMCU>
+          <szLocation_LOCN>MEMRK01</szLocation_LOCN>
+          <szLot_LOTN>C403220380</szLot_LOTN>
+          <mnCompletionIssueQty_QNTOW>983</mnCompletionIssueQty_QNTOW>
+          <szUnitOfMeasureAsInput_UOM>MT</szUnitOfMeasureAsInput_UOM>
+          <cBTNSelectLocation_EV01>1</cBTNSelectLocation_EV01>
+          <szSLIssueBranchPlant_MCU>B005</szSLIssueBranchPlant_MCU>
+          <szSLIssueLocation_LOCN>MEMRK01</szSLIssueLocation_LOCN>
+          <szSLIssueLot_LOTN>C403220380</szSLIssueLot_LOTN>
+          <mnSLIssueQuantity_SOQS>983</mnSLIssueQuantity_SOQS>
+        </MessageDetail>
+      </Request>
+    </Txn>
+  </TxnWrapper>
+  <TxnWrapper>
+    <UserName>jrbailey</UserName>
+    <GroupName>FH Lamination</GroupName>
+    <TxnGUID></TxnGUID>
+    <Txn>
+      <Request xmlns="http://e1.oracle.com/WIM">
+        <MessageHeader xmlns="">
+          <Environment>VAL_OSB</Environment>
+          <MessageType>WorkOrderIssues</MessageType>
+          <MessageID>123456</MessageID>
+          <MessageVersion>1.0</MessageVersion>
+          <MessageReferenceID>REF1</MessageReferenceID>
+          <UserID>VAL_OSBUSER</UserID>
+          <UserPassword>transact</UserPassword>
+          <SourceSystemName>COMPASS</SourceSystemName>
+          <Operation>IPDB005</Operation>
+        </MessageHeader>
+        <MessageDetail xmlns="">
+          <cdcLINKActionCode_EV01>0</cdcLINKActionCode_EV01>
+          <szUserId_USER>VAL_OSBUSER</szUserId_USER>
+          <szWorkStationId_JOBN>someIPDEI</szWorkStationId_JOBN>
+          <mnJobNumber_JOBS>*JOBS=pdapps.E1_DSI_SEQN</mnJobNumber_JOBS>
+          <szVersion_VERS>IPD0001X</szVersion_VERS>
+          <szBranchPlant_MCU>B005</szBranchPlant_MCU>
+          <mnDocumentOrderInvoiceE_DOCO>8822340</mnDocumentOrderInvoiceE_DOCO>
+          <mnQuantityToIssue_QNTOW>767</mnQuantityToIssue_QNTOW>
+          <szItemNoUnknownFormat_UITM>10994391</szItemNoUnknownFormat_UITM>
+          <mnSequenceNoOperations_OPSQ>10.00</mnSequenceNoOperations_OPSQ>
+          <szBranchComponent_CMCU>B005</szBranchComponent_CMCU>
+          <szLocation_LOCN>MEMLN8</szLocation_LOCN>
+          <szLot_LOTN>C300122677</szLot_LOTN>
+          <mnCompletionIssueQty_QNTOW>767</mnCompletionIssueQty_QNTOW>
+          <szUnitOfMeasureAsInput_UOM>MT</szUnitOfMeasureAsInput_UOM>
+          <cBTNSelectLocation_EV01>1</cBTNSelectLocation_EV01>
+          <szSLIssueBranchPlant_MCU>B005</szSLIssueBranchPlant_MCU>
+          <szSLIssueLocation_LOCN>MEMLN8</szSLIssueLocation_LOCN>
+          <szSLIssueLot_LOTN>C300122677</szSLIssueLot_LOTN>
+          <mnSLIssueQuantity_SOQS>767</mnSLIssueQuantity_SOQS>
+        </MessageDetail>
+      </Request>
+    </Txn>
+  </TxnWrapper>
+  <TxnWrapper>
+    <UserName>jrbailey</UserName>
+    <GroupName>FH Lamination</GroupName>
+    <TxnGUID></TxnGUID>
+    <Txn>
+      <Request xmlns="http://e1.oracle.com/WIM">
+        <MessageHeader xmlns="">
+          <Environment>VAL_OSB</Environment>
+          <MessageType>WorkOrderIssues</MessageType>
+          <MessageID>123456</MessageID>
+          <MessageVersion>1.0</MessageVersion>
+          <MessageReferenceID>REF1</MessageReferenceID>
+          <UserID>VAL_OSBUSER</UserID>
+          <UserPassword>transact</UserPassword>
+          <SourceSystemName>COMPASS</SourceSystemName>
+          <Operation>IPDB005</Operation>
+        </MessageHeader>
+        <MessageDetail xmlns="">
+          <cdcLINKActionCode_EV01>0</cdcLINKActionCode_EV01>
+          <szUserId_USER>VAL_OSBUSER</szUserId_USER>
+          <szWorkStationId_JOBN>someIPDEI</szWorkStationId_JOBN>
+          <mnJobNumber_JOBS>*JOBS=pdapps.E1_DSI_SEQN</mnJobNumber_JOBS>
+          <szVersion_VERS>IPD0001X</szVersion_VERS>
+          <szBranchPlant_MCU>B005</szBranchPlant_MCU>
+          <mnDocumentOrderInvoiceE_DOCO>8822340</mnDocumentOrderInvoiceE_DOCO>
+          <mnQuantityToIssue_QNTOW>147.7</mnQuantityToIssue_QNTOW>
+          <szItemNoUnknownFormat_UITM>R4417-42</szItemNoUnknownFormat_UITM>
+          <mnSequenceNoOperations_OPSQ>10.00</mnSequenceNoOperations_OPSQ>
+          <szBranchComponent_CMCU>B005</szBranchComponent_CMCU>
+          <szLocation_LOCN>RECDK</szLocation_LOCN>
+          <szLot_LOTN>27730134</szLot_LOTN>
+          <mnCompletionIssueQty_QNTOW>147.7</mnCompletionIssueQty_QNTOW>
+          <szUnitOfMeasureAsInput_UOM>MT</szUnitOfMeasureAsInput_UOM>
+          <cBTNSelectLocation_EV01>1</cBTNSelectLocation_EV01>
+          <szSLIssueBranchPlant_MCU>B005</szSLIssueBranchPlant_MCU>
+          <szSLIssueLocation_LOCN>RECDK</szSLIssueLocation_LOCN>
+          <szSLIssueLot_LOTN>27730134</szSLIssueLot_LOTN>
+          <mnSLIssueQuantity_SOQS>147.7</mnSLIssueQuantity_SOQS>
+        </MessageDetail>
+      </Request>
+    </Txn>
+  </TxnWrapper>
+  <TxnWrapper>
+    <UserName>jrbailey</UserName>
+    <GroupName>FH Lamination</GroupName>
+    <TxnGUID></TxnGUID>
+    <Txn>
+      <Request xmlns="http://e1.oracle.com/WIM">
+        <MessageHeader xmlns="">
+          <Environment>VAL_OSB</Environment>
+          <MessageType>WorkOrderIssues</MessageType>
+          <MessageID>123456</MessageID>
+          <MessageVersion>1.0</MessageVersion>
+          <MessageReferenceID>REF1</MessageReferenceID>
+          <UserID>VAL_OSBUSER</UserID>
+          <UserPassword>transact</UserPassword>
+          <SourceSystemName>COMPASS</SourceSystemName>
+          <Operation>IPDB005</Operation>
+        </MessageHeader>
+        <MessageDetail xmlns="">
+          <cdcLINKActionCode_EV01>0</cdcLINKActionCode_EV01>
+          <szUserId_USER>VAL_OSBUSER</szUserId_USER>
+          <szWorkStationId_JOBN>someIPDEI</szWorkStationId_JOBN>
+          <mnJobNumber_JOBS>*JOBS=pdapps.E1_DSI_SEQN</mnJobNumber_JOBS>
+          <szVersion_VERS>IPD0001X</szVersion_VERS>
+          <szBranchPlant_MCU>B005</szBranchPlant_MCU>
+          <mnDocumentOrderInvoiceE_DOCO>8822340</mnDocumentOrderInvoiceE_DOCO>
+          <mnQuantityToIssue_QNTOW>154.7</mnQuantityToIssue_QNTOW>
+          <szItemNoUnknownFormat_UITM>R4417-42</szItemNoUnknownFormat_UITM>
+          <mnSequenceNoOperations_OPSQ>10.00</mnSequenceNoOperations_OPSQ>
+          <szBranchComponent_CMCU>B005</szBranchComponent_CMCU>
+          <szLocation_LOCN>RECDK</szLocation_LOCN>
+          <szLot_LOTN>27730218</szLot_LOTN>
+          <mnCompletionIssueQty_QNTOW>154.7</mnCompletionIssueQty_QNTOW>
+          <szUnitOfMeasureAsInput_UOM>MT</szUnitOfMeasureAsInput_UOM>
+          <cBTNSelectLocation_EV01>1</cBTNSelectLocation_EV01>
+          <szSLIssueBranchPlant_MCU>B005</szSLIssueBranchPlant_MCU>
+          <szSLIssueLocation_LOCN>RECDK</szSLIssueLocation_LOCN>
+          <szSLIssueLot_LOTN>27730218</szSLIssueLot_LOTN>
+          <mnSLIssueQuantity_SOQS>154.7</mnSLIssueQuantity_SOQS>
+        </MessageDetail>
+      </Request>
+    </Txn>
+  </TxnWrapper>
+  <TxnWrapper>
+    <UserName>jrbailey</UserName>
+    <GroupName>FH Lamination</GroupName>
+    <TxnGUID></TxnGUID>
+    <Txn>
+      <Request xmlns="http://e1.oracle.com/WIM">
+        <MessageHeader xmlns="">
+          <Environment>VAL_OSB</Environment>
+          <MessageType>WorkOrderIssues</MessageType>
+          <MessageID>123456</MessageID>
+          <MessageVersion>1.0</MessageVersion>
+          <MessageReferenceID>REF1</MessageReferenceID>
+          <UserID>VAL_OSBUSER</UserID>
+          <UserPassword>transact</UserPassword>
+          <SourceSystemName>COMPASS</SourceSystemName>
+          <Operation>IPDB005</Operation>
+        </MessageHeader>
+        <MessageDetail xmlns="">
+          <cdcLINKActionCode_EV01>0</cdcLINKActionCode_EV01>
+          <szUserId_USER>VAL_OSBUSER</szUserId_USER>
+          <szWorkStationId_JOBN>someIPDEI</szWorkStationId_JOBN>
+          <mnJobNumber_JOBS>*JOBS=pdapps.E1_DSI_SEQN</mnJobNumber_JOBS>
+          <szVersion_VERS>IPD0001X</szVersion_VERS>
+          <szBranchPlant_MCU>B005</szBranchPlant_MCU>
+          <mnDocumentOrderInvoiceE_DOCO>8822340</mnDocumentOrderInvoiceE_DOCO>
+          <mnQuantityToIssue_QNTOW>198.2</mnQuantityToIssue_QNTOW>
+          <szItemNoUnknownFormat_UITM>R4417-42</szItemNoUnknownFormat_UITM>
+          <mnSequenceNoOperations_OPSQ>10.00</mnSequenceNoOperations_OPSQ>
+          <szBranchComponent_CMCU>B005</szBranchComponent_CMCU>
+          <szLocation_LOCN>RECDK</szLocation_LOCN>
+          <szLot_LOTN>27730236</szLot_LOTN>
+          <mnCompletionIssueQty_QNTOW>198.2</mnCompletionIssueQty_QNTOW>
+          <szUnitOfMeasureAsInput_UOM>MT</szUnitOfMeasureAsInput_UOM>
+          <cBTNSelectLocation_EV01>1</cBTNSelectLocation_EV01>
+          <szSLIssueBranchPlant_MCU>B005</szSLIssueBranchPlant_MCU>
+          <szSLIssueLocation_LOCN>RECDK</szSLIssueLocation_LOCN>
+          <szSLIssueLot_LOTN>27730236</szSLIssueLot_LOTN>
+          <mnSLIssueQuantity_SOQS>198.2</mnSLIssueQuantity_SOQS>
+        </MessageDetail>
+      </Request>
+    </Txn>
+  </TxnWrapper>
+  <TxnWrapper>
+    <UserName>jrbailey</UserName>
+    <GroupName>FH Lamination</GroupName>
+    <TxnGUID></TxnGUID>
+    <Txn>
+      <Request xmlns="http://e1.oracle.com/WIM">
+        <MessageHeader xmlns="">
+          <Environment>VAL_OSB</Environment>
+          <MessageType>WorkOrderIssues</MessageType>
+          <MessageID>123456</MessageID>
+          <MessageVersion>1.0</MessageVersion>
+          <MessageReferenceID>REF1</MessageReferenceID>
+          <UserID>VAL_OSBUSER</UserID>
+          <UserPassword>transact</UserPassword>
+          <SourceSystemName>COMPASS</SourceSystemName>
+          <Operation>IPDB005</Operation>
+        </MessageHeader>
+        <MessageDetail xmlns="">
+          <cdcLINKActionCode_EV01>0</cdcLINKActionCode_EV01>
+          <szUserId_USER>VAL_OSBUSER</szUserId_USER>
+          <szWorkStationId_JOBN>someIPDEI</szWorkStationId_JOBN>
+          <mnJobNumber_JOBS>*JOBS=pdapps.E1_DSI_SEQN</mnJobNumber_JOBS>
+          <szVersion_VERS>IPD0001X</szVersion_VERS>
+          <szBranchPlant_MCU>B005</szBranchPlant_MCU>
+          <mnDocumentOrderInvoiceE_DOCO>8822340</mnDocumentOrderInvoiceE_DOCO>
+          <mnQuantityToIssue_QNTOW>215</mnQuantityToIssue_QNTOW>
+          <szItemNoUnknownFormat_UITM>R4417-42</szItemNoUnknownFormat_UITM>
+          <mnSequenceNoOperations_OPSQ>10.00</mnSequenceNoOperations_OPSQ>
+          <szBranchComponent_CMCU>B005</szBranchComponent_CMCU>
+          <szLocation_LOCN>RECDK</szLocation_LOCN>
+          <szLot_LOTN>27730216</szLot_LOTN>
+          <mnCompletionIssueQty_QNTOW>215</mnCompletionIssueQty_QNTOW>
+          <szUnitOfMeasureAsInput_UOM>MT</szUnitOfMeasureAsInput_UOM>
+          <cBTNSelectLocation_EV01>1</cBTNSelectLocation_EV01>
+          <szSLIssueBranchPlant_MCU>B005</szSLIssueBranchPlant_MCU>
+          <szSLIssueLocation_LOCN>RECDK</szSLIssueLocation_LOCN>
+          <szSLIssueLot_LOTN>27730216</szSLIssueLot_LOTN>
+          <mnSLIssueQuantity_SOQS>215</mnSLIssueQuantity_SOQS>
+        </MessageDetail>
+      </Request>
+    </Txn>
+  </TxnWrapper>
+</TxnList>

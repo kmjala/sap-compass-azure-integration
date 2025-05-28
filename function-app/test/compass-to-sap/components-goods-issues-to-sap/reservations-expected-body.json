@@ -1,0 +1,35 @@
+{
+  "OrderID": "1030264",
+  "OrderOperation": "0010",
+  "Sequence": "00",
+  "to_ProdnOrdConfMatlDocItm": [
+    {
+      "OrderID": "1030264",
+      "Material": "10066697",
+      "Reservation": "7391122",
+      "ReservationItem": "4",
+      "Plant": "1015",
+      "StorageLocation": "2000",
+      "GoodsMovementType": "261",
+      "EntryUnitISOCode": "MTR",
+      "QuantityInEntryUnit": "6",
+      "Batch": "C403352747",
+      "EWMStorageBin": "INTBIRD-01",
+      "EWMWarehouse": "1015"
+    },
+    {
+      "OrderID": "1030264",
+      "Material": "M3005-107.00",
+      "Reservation": "7391122",
+      "ReservationItem": "5",
+      "Plant": "1015",
+      "StorageLocation": "2000",
+      "GoodsMovementType": "261",
+      "EntryUnitISOCode": "MTR",
+      "QuantityInEntryUnit": "6",
+      "Batch": "0008941167",
+      "EWMStorageBin": "INTBIRD-01",
+      "EWMWarehouse": "1015"
+    }
+  ]
+}

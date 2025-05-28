@@ -1,0 +1,27 @@
+# See https://typicode.github.io/husky/how-to.html#project-not-in-git-root-directory
+
+# Do not run commit checks on feature branches
+current_branch=$(git rev-parse --abbrev-ref HEAD)
+if [ "$current_branch" != "main" ]; then
+  echo "The current branch is not the main branch, therefore skip commit checks."
+  exit 0
+fi
+
+# Do not run if we are in a CI environment (or the user manually disabled it)
+if [ -n "$CI" ] && [ "$CI" = "true" ]; then
+  echo "The current environment is a CI environment, therefore skip commit checks."
+  exit 0
+fi
+
+# Check if the npm command exists and log a warning if it does not
+if ! command -v npm &> /dev/null; then
+  echo "WARNING: npm could not be found. Skipping commit checks."
+  exit 0
+fi
+
+# -----------------------------------------------------------------------------
+# Run the commit checks
+cd function-app
+npm run test
+npm run lint
+npm run prettier:check

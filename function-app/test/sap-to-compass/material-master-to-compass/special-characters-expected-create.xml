@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root TransactionType="ERPProductNew">
+  <ProductInfo>
+    <Product><![CDATA[VE2021@#$%^&*()[\/:*?""<>|]meh]]></Product>
+    <Revision>1</Revision>
+    <ERPDescription><![CDATA[GORE Automotive Vents]]></ERPDescription>
+    <PrimaryUOM>EA</PrimaryUOM>
+    <ProductType>UNMODELED</ProductType>
+    <NonAccretiveIssue>True</NonAccretiveIssue>
+    <LotControlled>True</LotControlled>
+  </ProductInfo>
+</Root>

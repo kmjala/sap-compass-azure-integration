@@ -1,0 +1,63 @@
+{
+  "OrderID": "1004143",
+  "OrderOperation": "0010",
+  "Sequence": "00",
+  "to_ProdnOrdConfMatlDocItm": [
+    {
+      "OrderID": "1004143",
+      "Material": "TP10935ALT-17.15",
+      "Reservation": "138328",
+      "ReservationItem": "1",
+      "Plant": "1015",
+      "StorageLocation": "2000",
+      "GoodsMovementType": "261",
+      "EntryUnitISOCode": "EA",
+      "QuantityInEntryUnit": "0.1",
+      "Batch": "B02401378436",
+      "EWMStorageBin": "INKANBAN",
+      "EWMWarehouse": "1015"
+    },
+    {
+      "OrderID": "1004143",
+      "Material": "GA3009-16.51",
+      "Reservation": "138328",
+      "ReservationItem": "2",
+      "Plant": "1015",
+      "StorageLocation": "2000",
+      "GoodsMovementType": "261",
+      "EntryUnitISOCode": "MTR",
+      "QuantityInEntryUnit": "0.1",
+      "Batch": "27857188",
+      "EWMStorageBin": "EXSARDO",
+      "EWMWarehouse": "1015"
+    },
+    {
+      "OrderID": "1004143",
+      "Material": "TP10935-17.15",
+      "Reservation": "138328",
+      "ReservationItem": "3",
+      "Plant": "1015",
+      "StorageLocation": "2000",
+      "GoodsMovementType": "261",
+      "EntryUnitISOCode": "MTR",
+      "QuantityInEntryUnit": "0.1",
+      "Batch": "B02401357142",
+      "EWMStorageBin": "INKANBAN",
+      "EWMWarehouse": "1015"
+    },
+    {
+      "OrderID": "1004143",
+      "Material": "GA3009-16.51",
+      "Reservation": "138328",
+      "ReservationItem": "2",
+      "Plant": "1015",
+      "StorageLocation": "2000",
+      "GoodsMovementType": "261",
+      "EntryUnitISOCode": "MTR",
+      "QuantityInEntryUnit": "0.1",
+      "Batch": "27857188",
+      "EWMStorageBin": "EXSARDO",
+      "EWMWarehouse": "1015"
+    }
+  ]
+}

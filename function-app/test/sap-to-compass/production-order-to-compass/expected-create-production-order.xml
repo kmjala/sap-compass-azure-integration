@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root TransactionType="ERPWOStart">
+  <WOStart>
+    <BranchPlant>B024</BranchPlant>
+    <WONumber>1003981</WONumber>
+    <Product>MZ-FG-C900</Product>
+    <Qty>202</Qty>
+    <UOM>PC</UOM>
+    <Status>95</Status>
+    <StartDate>2020-05-23</StartDate>
+    <CompDate>2020-05-27</CompDate>
+    <ERPRoute>1003981</ERPRoute>
+    <ItemList>
+      <BOMItem>
+        <Qty>0</Qty>
+        <Item>my component material</Item>
+        <SeqNum>1000</SeqNum>
+        <ItemUOM>PC</ItemUOM>
+        <ItemLocation>my item location</ItemLocation>
+        <IssueTypeCode>I</IssueTypeCode>
+      </BOMItem>
+      <BOMItem>
+        <Qty>5.000</Qty>
+        <Item>my component material - combine quantity</Item>
+        <SeqNum>2000</SeqNum>
+        <ItemUOM>PC</ItemUOM>
+        <ItemLocation>my item location</ItemLocation>
+        <IssueTypeCode>I</IssueTypeCode>
+      </BOMItem>
+      <BOMItem>
+        <Qty>0</Qty>
+        <Item>non-consumable material</Item>
+        <SeqNum>1000</SeqNum>
+        <ItemUOM>PC</ItemUOM>
+        <ItemLocation>my item location</ItemLocation>
+        <IssueTypeCode>I</IssueTypeCode>
+      </BOMItem>
+    </ItemList>
+    <ERPOrderType>ERPWO</ERPOrderType>
+  </WOStart>
+</Root>

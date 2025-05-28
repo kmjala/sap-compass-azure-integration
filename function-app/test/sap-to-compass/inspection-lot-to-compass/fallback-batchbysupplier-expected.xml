@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root TransactionType="ipdERPLotMasterUpdate">
+  <UnitStart>
+    <BranchPlant>B024</BranchPlant>
+    <Container>0000004352</Container>
+    <Product>VE0020GMC</Product>
+    <Qty>10000</Qty>
+    <UOM>EA</UOM>
+    <Location>my BatchStorageLocation</Location>
+    <Status></Status>
+    <MemoLot1 />
+    <MemoLot2 />
+    <MemoLot3 />
+    <SupplierLot>my fallback batch supplier</SupplierLot>
+  </UnitStart>
+</Root>

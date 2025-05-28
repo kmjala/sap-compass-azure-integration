@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TxnList count="1">
+  <TxnWrapper>
+    <UserName>jhaley</UserName>
+    <GroupName>Industrial</GroupName>
+    <TxnGUID>a863a2e2-bd4b-42d5-9d1a-efdf035eb439</TxnGUID>
+    <FileGuid>my-file-guid</FileGuid>
+    <Txn>
+      <Request xmlns="http://e1.oracle.com/SBFM">
+        <MessageHeader xmlns="">
+          <Environment>VAL_OSB</Environment>
+          <MessageType>SuperBackFlush</MessageType>
+          <MessageID>123456</MessageID>
+          <MessageVersion>1.0</MessageVersion>
+          <MessageReferenceID>REF1</MessageReferenceID>
+          <UserID>VAL_OSBUSER</UserID>
+          <UserPassword>transact</UserPassword>
+          <SourceSystemName>COMPASS</SourceSystemName>
+          <CreationDate />
+          <Operation>IPDB024</Operation>
+        </MessageHeader>
+        <MessageDetail xmlns="">
+          <szUserId_USER>VAL_OSBUSER</szUserId_USER>
+          <szWorkStationId_JOBN>USRSTATION</szWorkStationId_JOBN>
+          <mnJobNumber_JOBS>*JOBS=pdapps.E1_DSI_SEQN</mnJobNumber_JOBS>
+          <szVersion_VERS>IPD0008X</szVersion_VERS>
+          <mnOrderNumber_DOCO>1004157</mnOrderNumber_DOCO>
+          <InterfaceControlBranchPlant>B024</InterfaceControlBranchPlant>
+          <mnEmployeeNumber_AN8>25330</mnEmployeeNumber_AN8>
+          <mnSequenceNumber_SEQU>30</mnSequenceNumber_SEQU>
+          <mnInputQtyCompleted_QT01>300</mnInputQtyCompleted_QT01>
+          <mnInputQtyCanceled_TRQT>0</mnInputQtyCanceled_TRQT>
+          <szInputOpStatusCode_OPST>30</szInputOpStatusCode_OPST>
+          <cInputPayPointStatus_PPRF>P</cInputPayPointStatus_PPRF>
+          <szLot_LOTN>AG0000026</szLot_LOTN>
+          <szLocation_LOCN>GR-ZONE2</szLocation_LOCN>
+          <szMemoLotField1>AG0000026</szMemoLotField1>
+          <szMemoLotField2>AG0000026</szMemoLotField2>
+          <cdcLINKActionCode_EV01>0</cdcLINKActionCode_EV01>
+          <szSAPReceiptFlag>true</szSAPReceiptFlag>
+        </MessageDetail>
+      </Request>
+    </Txn>
+  </TxnWrapper>
+</TxnList>

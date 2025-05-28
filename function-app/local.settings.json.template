@@ -1,0 +1,18 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "FUNCTIONS_WORKER_RUNTIME": "node",
+    "AzureWebJobsFeatureFlags": "EnableWorkerIndexing",
+    "AzureWebJobsStorage__blobServiceUri": "https://sauivtxalxpuii2codefc.blob.core.windows.net",
+    "APPLICATIONINSIGHTS_CONNECTION_STRING": "...",
+    "SapServiceBusConnection": "...",
+    "CompassServiceBusConnection__fullyQualifiedNamespace": "sbn-uivtxalxpuii2.servicebus.windows.net",
+    "SAP_BASE_URL": "https://api.dv.sap.wlgore.com",
+    "SAP_API_KEY": "...",
+    "SAP_API_PRODNORDCONF2_DELAY": "15000",
+    "AZURE_SUBSCRIPTION_ID": "e2fda199-cfde-4565-9bb3-08b676d05cc2",
+    "AZURE_RESOURCE_GROUP_NAME": "rg-arb-406c7858f033cd27c6cf5c3530980ecd50d70417",
+    "MESSAGE_ARCHIVE_BLOB_SERVICE_URI": "https://sauivtxalxpuii2.blob.core.windows.net",
+    "MESSAGE_ARCHIVE_STORAGE_ACCOUNT_NAME": "sauivtxalxpuii2"
+  }
+}

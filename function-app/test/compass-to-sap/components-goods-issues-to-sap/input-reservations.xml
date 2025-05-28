@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TxnList count="2">
+    <TxnWrapper>
+        <UserName>kvennard</UserName>
+        <GroupName>Industrial</GroupName>
+        <TxnGUID>9b8c2cb4-df00-45cc-906c-34911944fd8f</TxnGUID>
+        <FileGuid>my-file-guid</FileGuid>
+        <Txn>
+            <Request xmlns="http://e1.oracle.com/WIM">
+                <MessageHeader xmlns="">
+                    <Environment>VAL_OSB</Environment>
+                    <MessageType>WorkOrderIssues</MessageType>
+                    <MessageID>123456</MessageID>
+                    <MessageVersion>1.0</MessageVersion>
+                    <MessageReferenceID>REF1</MessageReferenceID>
+                    <UserID>VAL_OSBUSER</UserID>
+                    <UserPassword>transact</UserPassword>
+                    <SourceSystemName>COMPASS</SourceSystemName>
+                    <Operation>IPDB024</Operation>
+                </MessageHeader>
+                <MessageDetail xmlns="">
+                    <cdcLINKActionCode_EV01>0</cdcLINKActionCode_EV01>
+                    <szUserId_USER>VAL_OSBUSER</szUserId_USER>
+                    <szWorkStationId_JOBN>someIPDEI</szWorkStationId_JOBN>
+                    <mnJobNumber_JOBS>*JOBS=pdapps.E1_DSI_SEQN</mnJobNumber_JOBS>
+                    <szVersion_VERS>IPD0001X</szVersion_VERS>
+                    <szBranchPlant_MCU>B024</szBranchPlant_MCU>
+                    <mnDocumentOrderInvoiceE_DOCO>1030264</mnDocumentOrderInvoiceE_DOCO>
+                    <mnQuantityToIssue_QNTOW>6</mnQuantityToIssue_QNTOW>
+                    <szItemNoUnknownFormat_UITM>10066697</szItemNoUnknownFormat_UITM>
+                    <mnSequenceNoOperations_OPSQ>10.00</mnSequenceNoOperations_OPSQ>
+                    <szBranchComponent_CMCU>B024</szBranchComponent_CMCU>
+                    <szLocation_LOCN>INTBIRD-01</szLocation_LOCN>
+                    <szLot_LOTN>C403352747</szLot_LOTN>
+                    <mnCompletionIssueQty_QNTOW>6</mnCompletionIssueQty_QNTOW>
+                    <szUnitOfMeasureAsInput_UOM>MT</szUnitOfMeasureAsInput_UOM>
+                    <cBTNSelectLocation_EV01>1</cBTNSelectLocation_EV01>
+                    <szSLIssueBranchPlant_MCU>B024</szSLIssueBranchPlant_MCU>
+                    <szSLIssueLocation_LOCN>INTBIRD-01</szSLIssueLocation_LOCN>
+                    <szSLIssueLot_LOTN>C403352747</szSLIssueLot_LOTN>
+                    <mnSLIssueQuantity_SOQS>6</mnSLIssueQuantity_SOQS>
+                </MessageDetail>
+            </Request>
+        </Txn>
+    </TxnWrapper>
+    <TxnWrapper>
+        <UserName>kvennard</UserName>
+        <GroupName>Industrial</GroupName>
+        <TxnGUID>9b8c2cb4-df00-45cc-906c-34911944fd8f</TxnGUID>
+        <Txn>
+            <Request xmlns="http://e1.oracle.com/WIM">
+                <MessageHeader xmlns="">
+                    <Environment>VAL_OSB</Environment>
+                    <MessageType>WorkOrderIssues</MessageType>
+                    <MessageID>123456</MessageID>
+                    <MessageVersion>1.0</MessageVersion>
+                    <MessageReferenceID>REF1</MessageReferenceID>
+                    <UserID>VAL_OSBUSER</UserID>
+                    <UserPassword>transact</UserPassword>
+                    <SourceSystemName>COMPASS</SourceSystemName>
+                    <Operation>IPDB024</Operation>
+                </MessageHeader>
+                <MessageDetail xmlns="">
+                    <cdcLINKActionCode_EV01>0</cdcLINKActionCode_EV01>
+                    <szUserId_USER>VAL_OSBUSER</szUserId_USER>
+                    <szWorkStationId_JOBN>someIPDEI</szWorkStationId_JOBN>
+                    <mnJobNumber_JOBS>*JOBS=pdapps.E1_DSI_SEQN</mnJobNumber_JOBS>
+                    <szVersion_VERS>IPD0001X</szVersion_VERS>
+                    <szBranchPlant_MCU>B024</szBranchPlant_MCU>
+                    <mnDocumentOrderInvoiceE_DOCO>1030264</mnDocumentOrderInvoiceE_DOCO>
+                    <mnQuantityToIssue_QNTOW>6</mnQuantityToIssue_QNTOW>
+                    <szItemNoUnknownFormat_UITM>M3005-107.00</szItemNoUnknownFormat_UITM>
+                    <mnSequenceNoOperations_OPSQ>10.00</mnSequenceNoOperations_OPSQ>
+                    <szBranchComponent_CMCU>B024</szBranchComponent_CMCU>
+                    <szLocation_LOCN>INTBIRD-01</szLocation_LOCN>
+                    <szLot_LOTN>0008941167</szLot_LOTN>
+                    <mnCompletionIssueQty_QNTOW>6</mnCompletionIssueQty_QNTOW>
+                    <szUnitOfMeasureAsInput_UOM>MT</szUnitOfMeasureAsInput_UOM>
+                    <cBTNSelectLocation_EV01>1</cBTNSelectLocation_EV01>
+                    <szSLIssueBranchPlant_MCU>B024</szSLIssueBranchPlant_MCU>
+                    <szSLIssueLocation_LOCN>INTBIRD-01</szSLIssueLocation_LOCN>
+                    <szSLIssueLot_LOTN>0008941167</szSLIssueLot_LOTN>
+                    <mnSLIssueQuantity_SOQS>6</mnSLIssueQuantity_SOQS>
+                </MessageDetail>
+            </Request>
+        </Txn>
+    </TxnWrapper>
+    <CamstarData>
+        <ctIssueERPWOInfo>
+            <Header DestinationValue="" DocumentName="InSiteSchema" DocumentType="ctIssueERPWOInfo"
+                SourceType="OrganizationName" SourceValue="" TransactionType="" />
+            <Data>
+                <CDOTypeId>4718603</CDOTypeId>
+                <Container __CDOTypeName="ctContainer">
+                    <__name>AG0000208</__name>
+                    <__level>
+                        <__name>Lot</__name>
+                    </__level>
+                    <__Id>48000f8000591a1e</__Id>
+                </Container>
+                <TxnDate>2024-11-09T14:53:30-05:00</TxnDate>
+                <ctVersion>IPD0001X</ctVersion>
+                <ctOrder>1030264</ctOrder>
+                <ctOpSeq>10.00</ctOpSeq>
+                <ctHistoryDetails>
+                    <__listItem>
+                        <HistoryId __CDOTypeName="ctContainer">
+                            <__name>AG0000208</__name>
+                            <__Id>48000f8000591a1e</__Id>
+                        </HistoryId>
+                        <ActualQty2Issued>0</ActualQty2Issued>
+                        <ActualQtyIssued>6</ActualQtyIssued>
+                        <Actuals>
+                            <__listItem>
+                                <HistoryId __CDOTypeName="ctContainer">
+                                    <__name>AG0000208</__name>
+                                    <__Id>48000f8000591a1e</__Id>
+                                </HistoryId>
+                                <Notes __empty="yes" />
+                                <IssueReason />
+                                <Product>
+                                    <__name>10066697</__name>
+                                    <__rev>1</__rev>
+                                    <__useROR>false</__useROR>
+                                    <__Id>00062cd000000d51</__Id>
+                                </Product>
+                                <QtyIssued>6</QtyIssued>
+                                <Qty2Issued />
+                                <ReferenceDesignator __empty="yes" />
+                                <SubstitutionReason />
+                                <VendorItem />
+                                <DisplayName>6 quantity issued from container C403352747 to
+                                    container AG0000208 with reason &lt;unknown reason&gt;. Issued
+                                    product: 10066697. Substitute reason: &lt;unknown reason&gt;</DisplayName>
+                                <ToContainer __CDOTypeName="ctContainer">
+                                    <__name>AG0000208</__name>
+                                    <__level>
+                                        <__name>Lot</__name>
+                                    </__level>
+                                    <__Id>48000f8000591a1e</__Id>
+                                </ToContainer>
+                                <ToLocation />
+                                <FromContainer __CDOTypeName="ctContainer">
+                                    <__name>C403352747</__name>
+                                    <__level>
+                                        <__name>Lot</__name>
+                                    </__level>
+                                    <__Id>48000f8000591a1b</__Id>
+                                </FromContainer>
+                                <FromLocation />
+                                <CDOTypeId>6939</CDOTypeId>
+                                <IssuedFrom>C403352747</IssuedFrom>
+                                <IsAutoWeightEntry>false</IsAutoWeightEntry>
+                                <Resource />
+                                <FromBatch />
+                                <FromCarrier />
+                                <ManualOverride>false</ManualOverride>
+                                <DefectsRecorded>false</DefectsRecorded>
+                                <ProductDescription>Membrane Prism 1.0 um</ProductDescription>
+                                <ctERPIssueQty>6</ctERPIssueQty>
+                                <ctERPIssueUOM>
+                                    <__name>MT</__name>
+                                    <__Id>0008ded000000047</__Id>
+                                </ctERPIssueUOM>
+                                <UOM>
+                                    <__name>MT</__name>
+                                    <__Id>0008ded000000047</__Id>
+                                </UOM>
+                                <ctERPLocation>INTBIRD-01</ctERPLocation>
+                                <ctMfgOrder>
+                                    <__name>1030264</__name>
+                                    <__Id>000654800004963a</__Id>
+                                </ctMfgOrder>
+                                <ipdERPIssueFromLot>C403352747</ipdERPIssueFromLot>
+                            </__listItem>
+                        </Actuals>
+                        <BOMLineItem __CDOTypeName="MfgOrderMaterialListItem">
+                            <__name>773836283628.8029</__name>
+                            <__parent __CDOTypeName="MfgOrder">
+                                <__name>1030264</__name>
+                                <__Id>000654800004963a</__Id>
+                            </__parent>
+                            <__Id>001b7b8000167753</__Id>
+                        </BOMLineItem>
+                        <CloseWhenEmpty>true</CloseWhenEmpty>
+                        <Notes __empty="yes" />
+                        <IssueControl>2</IssueControl>
+                        <QtyRequired>40.9</QtyRequired>
+                        <Qty2Required />
+                        <IssueDifferenceReason />
+                        <ReferenceDesignator __empty="yes" />
+                        <Product>
+                            <__name>10066697</__name>
+                            <__rev>1</__rev>
+                            <__useROR>false</__useROR>
+                            <__Id>00062cd000000d51</__Id>
+                        </Product>
+                        <DisplayName>6 quantity issued versus 40.9 quantity required for component
+                            product 10066697</DisplayName>
+                        <CDOTypeId>6590</CDOTypeId>
+                        <QtyLowerLimit />
+                        <QtyUpperLimit />
+                        <IsManualReadingOnly>false</IsManualReadingOnly>
+                        <AllowManualWeighOverride>false</AllowManualWeighOverride>
+                        <UOM>
+                            <__name>MT</__name>
+                            <__Id>0008ded000000047</__Id>
+                        </UOM>
+                        <UOM2 />
+                    </__listItem>
+                    <__listItem>
+                        <HistoryId __CDOTypeName="ctContainer">
+                            <__name>AG0000208</__name>
+                            <__Id>48000f8000591a1e</__Id>
+                        </HistoryId>
+                        <ActualQty2Issued>0</ActualQty2Issued>
+                        <ActualQtyIssued>6</ActualQtyIssued>
+                        <Actuals>
+                            <__listItem>
+                                <HistoryId __CDOTypeName="ctContainer">
+                                    <__name>AG0000208</__name>
+                                    <__Id>48000f8000591a1e</__Id>
+                                </HistoryId>
+                                <Notes __empty="yes" />
+                                <IssueReason />
+                                <Product>
+                                    <__name>M3005-107.00</__name>
+                                    <__rev>1</__rev>
+                                    <__useROR>false</__useROR>
+                                    <__Id>00062c300006050c</__Id>
+                                </Product>
+                                <QtyIssued>6</QtyIssued>
+                                <Qty2Issued />
+                                <ReferenceDesignator __empty="yes" />
+                                <SubstitutionReason />
+                                <VendorItem />
+                                <DisplayName>6 quantity issued from container 0008941167 to
+                                    container AG0000208 with reason &lt;unknown reason&gt;. Issued
+                                    product: M3005-107.00. Substitute reason: &lt;unknown reason&gt;</DisplayName>
+                                <ToContainer __CDOTypeName="ctContainer">
+                                    <__name>AG0000208</__name>
+                                    <__level>
+                                        <__name>Lot</__name>
+                                    </__level>
+                                    <__Id>48000f8000591a1e</__Id>
+                                </ToContainer>
+                                <ToLocation />
+                                <FromContainer __CDOTypeName="ctContainer">
+                                    <__name>0008941167</__name>
+                                    <__level>
+                                        <__name>Lot</__name>
+                                    </__level>
+                                    <__Id>48000f8000591a1a</__Id>
+                                </FromContainer>
+                                <FromLocation />
+                                <CDOTypeId>6939</CDOTypeId>
+                                <IssuedFrom>0008941167</IssuedFrom>
+                                <IsAutoWeightEntry>false</IsAutoWeightEntry>
+                                <Resource />
+                                <FromBatch />
+                                <FromCarrier />
+                                <ManualOverride>false</ManualOverride>
+                                <DefectsRecorded>false</DefectsRecorded>
+                                <ProductDescription>Backer M3005 107 cm</ProductDescription>
+                                <ctERPIssueQty>6</ctERPIssueQty>
+                                <ctERPIssueUOM>
+                                    <__name>MT</__name>
+                                    <__Id>0008ded000000047</__Id>
+                                </ctERPIssueUOM>
+                                <UOM>
+                                    <__name>MT</__name>
+                                    <__Id>0008ded000000047</__Id>
+                                </UOM>
+                                <ctERPLocation>INTBIRD-01</ctERPLocation>
+                                <ctMfgOrder>
+                                    <__name>1030264</__name>
+                                    <__Id>000654800004963a</__Id>
+                                </ctMfgOrder>
+                                <ipdERPIssueFromLot>0008941167</ipdERPIssueFromLot>
+                            </__listItem>
+                        </Actuals>
+                        <BOMLineItem __CDOTypeName="MfgOrderMaterialListItem">
+                            <__name>773836283628.803</__name>
+                            <__parent __CDOTypeName="MfgOrder">
+                                <__name>1030264</__name>
+                                <__Id>000654800004963a</__Id>
+                            </__parent>
+                            <__Id>001b7b8000167754</__Id>
+                        </BOMLineItem>
+                        <CloseWhenEmpty>true</CloseWhenEmpty>
+                        <Notes __empty="yes" />
+                        <IssueControl>2</IssueControl>
+                        <QtyRequired>40.9</QtyRequired>
+                        <Qty2Required />
+                        <IssueDifferenceReason />
+                        <ReferenceDesignator __empty="yes" />
+                        <Product>
+                            <__name>M3005-107.00</__name>
+                            <__rev>1</__rev>
+                            <__useROR>false</__useROR>
+                            <__Id>00062c300006050c</__Id>
+                        </Product>
+                        <DisplayName>6 quantity issued versus 40.9 quantity required for component
+                            product M3005-107.00</DisplayName>
+                        <CDOTypeId>6590</CDOTypeId>
+                        <QtyLowerLimit />
+                        <QtyUpperLimit />
+                        <IsManualReadingOnly>false</IsManualReadingOnly>
+                        <AllowManualWeighOverride>false</AllowManualWeighOverride>
+                        <UOM>
+                            <__name>MT</__name>
+                            <__Id>0008ded000000047</__Id>
+                        </UOM>
+                        <UOM2 />
+                    </__listItem>
+                </ctHistoryDetails>
+                <ctBranchPlant>B024</ctBranchPlant>
+                <ctUserName>kvennard</ctUserName>
+                <ctAreaEmployeeGroup>
+                    <__name>Industrial</__name>
+                    <__Id>48002cd00000001c</__Id>
+                </ctAreaEmployeeGroup>
+                <ctAccount __empty="yes" />
+                <ctOrderType>ERPWO</ctOrderType>
+                <ctERPTxnName>WorkOrderIssues</ctERPTxnName>
+                <ctSubLedgerType __empty="yes" />
+                <ctSubledger __empty="yes" />
+                <ctTxnId>9b8c2cb4-df00-45cc-906c-34911944fd8f</ctTxnId>
+                <CoByProduct />
+            </Data>
+        </ctIssueERPWOInfo>
+    </CamstarData>
+</TxnList>

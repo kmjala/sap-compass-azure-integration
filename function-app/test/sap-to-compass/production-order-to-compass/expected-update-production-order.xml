@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root TransactionType="ERPWOChange">
+  <WOStart>
+    <BranchPlant>B024</BranchPlant>
+    <WONumber>1003981</WONumber>
+    <Product>MZ-FG-C900</Product>
+    <Qty>202</Qty>
+    <UOM>PC</UOM>
+    <Status>95</Status>
+    <StartDate>2020-05-23</StartDate>
+    <CompDate>2020-05-27</CompDate>
+    <ERPRoute>1003981</ERPRoute>
+    <ERPOrderType>ERPWO</ERPOrderType>
+  </WOStart>
+</Root>

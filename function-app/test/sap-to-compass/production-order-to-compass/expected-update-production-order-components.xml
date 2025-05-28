@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root TransactionType="ERPMatlListChange">
+  <WOrder>
+    <WONumber>1003981</WONumber>
+    <ItemDelete />
+    <ItemList>
+      <BOMItem>
+        <Qty>0</Qty>
+        <Item>my component material</Item>
+        <SeqNum>1000</SeqNum>
+        <ItemUOM>PC</ItemUOM>
+        <ItemLocation>my item location</ItemLocation>
+        <IssueTypeCode>I</IssueTypeCode>
+      </BOMItem>
+      <BOMItem>
+        <Qty>5.000</Qty>
+        <Item>my component material - combine quantity</Item>
+        <SeqNum>2000</SeqNum>
+        <ItemUOM>PC</ItemUOM>
+        <ItemLocation>my item location</ItemLocation>
+        <IssueTypeCode>I</IssueTypeCode>
+      </BOMItem>
+      <BOMItem>
+        <Qty>0</Qty>
+        <Item>non-consumable material</Item>
+        <SeqNum>1000</SeqNum>
+        <ItemUOM>PC</ItemUOM>
+        <ItemLocation>my item location</ItemLocation>
+        <IssueTypeCode>I</IssueTypeCode>
+      </BOMItem>
+    </ItemList>
+  </WOrder>
+</Root>

@@ -1,0 +1,85 @@
+Compass,S4,Note,ISO Name
+%,P1,percent,Percentage
+(none),,blank UOM for items without a unit of measure,
+1/CM3,?,1 / centimeters cubed,
+BC,BG,Bag,Bag
+BX,BB,Box,base box
+C,?,,
+CA,CV,Case,
+CC,?,,
+CFU,?,,
+CFU/25cm_,?,,
+CFU/Bag,?,,
+CFU/ml,?,percent,
+CM,CMT,Centimeters,Centimeter
+CS,?,Hundred Square Feet,
+CV,?,,
+Counts/IN,?,Counts per inch,
+Counts/ml,?,,
+DC,?,,
+DR,?,Drums,
+Da,?,Dalton,
+EA,EA,Each,
+ET,?,One Thousandth of an Each,
+EU/mL,?,,
+FPM,?,,
+FT,FOT,feet,Feet
+GA,GLL,Gallons U.S.,Gallon (US)
+GM,G,jde grams,
+GM/CC,?,,
+IN,INH,INCHES,Inch
+IN Hg,?,IN Hg,
+KG,KGM,kilograms,Kilogram
+KW,?,Kilograms wet,
+L/MIN,?,Liters per Minute,
+L/bar/min,?,,
+L/hr/m2/bar,?,Flux,
+LB,LBR,pounds,Pound
+LT,LTR,liters,Liter
+Lpm/m2/kpa,?,,
+MG,?,,
+MG/ML,?,,
+ML,MLT,Mililiters,Milliliter
+MM,MMT,MILLIMETERS,Millimeter
+MM/MM,?,,
+MMH2O,?,Millimetes of Water,
+MOL/GM,?,,
+MOhms-cm,?,,
+MPa,?,,
+MS/CM,?,,
+MT,MTR,Meters,ISO Meter Unit of Measure
+N,NEW,newtons,Newton
+N/15mm,?,,
+N/20mm,?,,
+N/25mm,?,,
+N/50mm,?,,
+N/cm,?,,
+N/in,?,newtons/inches,
+N/mm,?,,
+PARTS/MT,?,,
+PC,PCE,Piece,
+PC,H87,Pieces,Piece
+PK,PK,Pack,Pack
+Pa,PAL,Pascals,Pascal
+Pa-s,?,,
+Particles/0.1m_,?,Particles per 0.1m_,
+Peak/cm,?,,
+Pleats/100mm,?,# of Pleats per 100mm,
+Pleats/Minute,?,# of Pleats per minute,
+RL,ROL,Roll,Not found
+Rayls,?,,
+Rotations,?,Rotations,
+SC,?,Square Centimeters,
+SF,FTK,Square Feet,Square foot
+SM,MTK,Square Meters,Square meter
+SP,SO,spools,Spool
+ST,?,Set,
+SY,?,Square Yards,
+Shore 00,?,Shore hardness scale,
+Shore A,?,,
+Strands/25.4mm,?,# of Strands per 25.4 mm in one direction,
+Ton,?,,
+UV,?,,
+W/m*K,?,THERMAL CONDUCTIVITY,
+YD,?,yards,
+MT,M,Meters,S4 Meter Unit of Measure

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TxnList count="1">
+  <TxnWrapper>
+    <FileGuid>unknown-messagetype-input.xml-guid</FileGuid>
+    <UserName>dbirney</UserName>
+    <GroupName />
+    <TxnGUID />
+    <Txn>
+      <Request xmlns="http://e1.oracle.com/SBFM">
+        <MessageHeader xmlns="">
+          <Environment>VAL_OSB</Environment>
+          <MessageType>unknown message type</MessageType>
+          <MessageID>123456</MessageID>
+          <MessageVersion>1.0</MessageVersion>
+          <MessageReferenceID>REF1</MessageReferenceID>
+          <UserID>VAL_OSBUSER</UserID>
+          <UserPassword>transact</UserPassword>
+          <SourceSystemName>COMPASS</SourceSystemName>
+          <CreationDate />
+          <Operation>IPDB024</Operation>
+        </MessageHeader>
+        <MessageDetail xmlns="">
+          <szUserId_USER>VAL_OSBUSER</szUserId_USER>
+          <szWorkStationId_JOBN>USRSTATION</szWorkStationId_JOBN>
+          <mnJobNumber_JOBS>*JOBS=pdapps.E1_DSI_SEQN</mnJobNumber_JOBS>
+          <szVersion_VERS>IPD0008X</szVersion_VERS>
+          <mnOrderNumber_DOCO>3074005</mnOrderNumber_DOCO>
+          <InterfaceControlBranchPlant>B024</InterfaceControlBranchPlant>
+          <mnEmployeeNumber_AN8>25330</mnEmployeeNumber_AN8>
+          <mnSequenceNumber_SEQU>20</mnSequenceNumber_SEQU>
+          <mnInputQtyCompleted_QT01>100</mnInputQtyCompleted_QT01>
+          <mnInputQtyCanceled_TRQT>0</mnInputQtyCanceled_TRQT>
+          <szInputOpStatusCode_OPST>20</szInputOpStatusCode_OPST>
+          <cInputPayPointStatus_PPRF>P</cInputPayPointStatus_PPRF>
+          <szLot_LOTN>AG0000024</szLot_LOTN>
+          <szLocation_LOCN />
+          <szMemoLotField1>AG0000024</szMemoLotField1>
+          <szMemoLotField2>AG0000024</szMemoLotField2>
+          <cdcLINKActionCode_EV01>0</cdcLINKActionCode_EV01>
+        </MessageDetail>
+      </Request>
+    </Txn>
+  </TxnWrapper>
+</TxnList>

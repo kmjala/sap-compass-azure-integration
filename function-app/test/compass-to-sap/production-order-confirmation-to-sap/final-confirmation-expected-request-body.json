@@ -1,0 +1,17 @@
+{
+  "OrderID": "1004157",
+  "Plant": "1015",
+  "OrderOperation": "0030",
+  "Sequence": "00",
+  "ConfirmationYieldQuantity": "300",
+  "ConfirmationScrapQuantity": "0",
+  "OpenReservationsIsCleared": true,
+  "IsFinalConfirmation": true,
+  "FinalConfirmationType": "X",
+  "OpConfirmedWorkQuantity1": "0.000",
+  "OpConfirmedWorkQuantity2": "0.015",
+  "OpConfirmedWorkQuantity3": "0.015",
+  "OpConfirmedWorkQuantity4": "0.000",
+  "OpConfirmedWorkQuantity5": "0.000",
+  "OpConfirmedWorkQuantity6": "0.000"
+}

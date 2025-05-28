@@ -1,0 +1,14 @@
+{
+  "OrderID": "3074005",
+  "Plant": "1015",
+  "OrderOperation": "0010",
+  "Sequence": "00",
+  "ConfirmationYieldQuantity": "100",
+  "ConfirmationScrapQuantity": "0",
+  "OpConfirmedWorkQuantity1": "0.500",
+  "OpConfirmedWorkQuantity2": "0.008",
+  "OpConfirmedWorkQuantity3": "0.008",
+  "OpConfirmedWorkQuantity4": "0.000",
+  "OpConfirmedWorkQuantity5": "0.000",
+  "OpConfirmedWorkQuantity6": "0.000"
+}

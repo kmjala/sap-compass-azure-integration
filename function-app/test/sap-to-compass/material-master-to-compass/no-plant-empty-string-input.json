@@ -1,0 +1,106 @@
+{
+  "Product": "VE2021",
+  "BaseUnit": "each",
+  "BaseUnitISOCode": "EA",
+  "ProductDescription": [
+    {
+      "Language": "EN",
+      "ProductDescription": "GORE Automotive Vents"
+    }
+  ],
+  "PlantData": [""],
+  "ProductClass": [
+    {
+      "ClassDetails": {
+        "__metadata": {
+          "id": "https://devs4dba.wlgore.com:44300/sap/opu/odata/sap/API_CLFN_PRODUCT_SRV/A_ClfnClassForKeyDate('529')",
+          "uri": "https://devs4dba.wlgore.com:44300/sap/opu/odata/sap/API_CLFN_PRODUCT_SRV/A_ClfnClassForKeyDate('529')",
+          "type": "API_CLFN_PRODUCT_SRV.A_ClfnClassForKeyDateType"
+        },
+        "ClassInternalID": "471",
+        "ClassType": "001",
+        "ClassTypeName": "Material Class",
+        "Class": "INTERFACE_DATA",
+        "ClassStatus": "1",
+        "ClassStatusName": "Released",
+        "ClassGroup": "",
+        "ClassGroupName": "",
+        "ClassSearchAuthGrp": "",
+        "ClassClassfctnAuthGrp": "",
+        "ClassMaintAuthGrp": "",
+        "DocNumber": "",
+        "DocumentType": "",
+        "DocumentPart": "",
+        "DocumentVersion": "",
+        "SameClassfctnReaction": "X",
+        "ClassStandardOrgName": "",
+        "ClassStandardNumber": "",
+        "ClassStandardStartDate": null,
+        "ClassStandardVersionStartDate": null,
+        "ClassStandardVersion": "0",
+        "ClassStandardCharcTable": "",
+        "CreationDate": "/Date(1692748800000)/",
+        "LastChangeDate": "/Date(1727827200000)/",
+        "ClassIsLocal": false,
+        "ValidityStartDate": "/Date(1692748800000)/",
+        "ValidityEndDate": "/Date(253402214400000)/",
+        "ClassLastChangedDateTime": "/Date(1727873130358+0000)/",
+        "KeyDate": "/Date(1729468800000)/"
+      },
+      "ProductClassCharc": [
+        {
+          "Description": {
+            "__metadata": {
+              "id": "https://devs4dba.wlgore.com:44300/sap/opu/odata/sap/API_CLFN_CHARACTERISTIC_SRV/A_ClfnCharcDescForKeyDate(CharcInternalID='1241',Language='EN')",
+              "uri": "https://devs4dba.wlgore.com:44300/sap/opu/odata/sap/API_CLFN_CHARACTERISTIC_SRV/A_ClfnCharcDescForKeyDate(CharcInternalID='1241',Language='EN')",
+              "type": "API_CLFN_CHARACTERISTIC_SRV.A_ClfnCharcDescForKeyDateType",
+              "etag": "W/\"'SADL-202410021541187219990C~20241002154118.7219990'\""
+            },
+            "Delete_mc": true,
+            "Update_mc": true,
+            "CharcInternalID": "1241",
+            "Language": "EN",
+            "CharcDescription": "IS MES RELEVANT",
+            "ChangeNumber": "",
+            "ValidityStartDate": null,
+            "ValidityEndDate": "/Date(253402214400000)/",
+            "KeyDate": "/Date(1729468800000)/",
+            "CharcLastChangedDateTime": "/Date(1727883678721+0000)/"
+          },
+          "Valuation": [
+            {
+              "__metadata": {
+                "id": "https://devs4dba.wlgore.com:44300/sap/opu/odata/sap/API_CLFN_PRODUCT_SRV/A_ProductCharcValue(Product='MES01',ClassType='001',CharcInternalID='1241',CharcValuePositionNumber='1')",
+                "uri": "https://devs4dba.wlgore.com:44300/sap/opu/odata/sap/API_CLFN_PRODUCT_SRV/A_ProductCharcValue(Product='MES01',ClassType='001',CharcInternalID='1241',CharcValuePositionNumber='1')",
+                "type": "API_CLFN_PRODUCT_SRV.A_ProductCharcValueType"
+              },
+              "Product": "MES01",
+              "ClassType": "001",
+              "CharcInternalID": "1241",
+              "CharcValuePositionNumber": "1",
+              "KeyDate": "/Date(1729468800000)/",
+              "ChangeNumber": "",
+              "CharcValueDependency": "1",
+              "CharcValue": "YES",
+              "CharcFromNumericValue": "0",
+              "CharcFromNumericValueUnit": "",
+              "CharcToNumericValue": "0",
+              "CharcToNumericValueUnit": "",
+              "CharcFromDecimalValue": "0.00000000000000",
+              "CharcToDecimalValue": "0.00000000000000",
+              "CharcFromAmount": "0.00",
+              "CharcToAmount": "0.00",
+              "Currency": "",
+              "CharcFromDate": null,
+              "CharcToDate": null,
+              "CharcFromTime": "PT00H00M00S",
+              "CharcToTime": "PT00H00M00S",
+              "CharacteristicAuthor": "",
+              "CharcMaintAuthGrp": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+Compass,S4,Note
+1,?,
+2,?,Customer Specific Use or 'Fire Sale'
+3,?,Use for Parts Only
+A,?,
+E,?,
+Failed Testing,?,Failed Testing
+I,?,
+L,?,
+N,?,Slit Down for Useable Material
+NCMR,?,
+P,?,On-Hold For Return to Supplier
+Q,?,Under Quarantine
+R,R,Reserved for Internal Use
+S,?,
+SPC,?,Hold for SPC Charts
+V,?,Hold for Visual MRP
+W,?,Hold For Warehouse-Inspection
+X,B6,Nonconformance Hold
+X,Q4,SAP Quality Hold
+Y,?,R and D Material
+,F2,Unrestricted
