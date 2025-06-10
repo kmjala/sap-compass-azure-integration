@@ -1,0 +1,67 @@
+name: Checks subflow
+on:
+  workflow_call:
+
+jobs:
+  check-bicep:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Lint Bicep
+        uses: azure/cli@v2
+        with:
+          inlineScript: az bicep lint --file main.bicep
+
+  # check-security:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: actions/checkout@v4
+
+  #     # This step will fail if any vulnerabilities are detected
+  #     - name: Run Trivy vulnerability scanner on the code base
+  #       uses: aquasecurity/trivy-action@master
+  #       with:
+  #         scan-type: fs
+  #         # Vulnerabilities that cannot be fixed will be ignored
+  #         ignore-unfixed: true
+  #         # Non-zero exit code fails this step if vulnerabilities were found
+  #         exit-code: 1
+  #         # Only scan for critical and high severity vulnerabilities
+  #         severity: CRITICAL,HIGH
+  #         vuln-type: library
+
+  check-function-app:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash
+        working-directory: function-app
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: function-app/package.json
+          cache-dependency-path: function-app/package-lock.json
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Check code style
+        run: npm run prettier:check
+
+      - name: Lint code
+        run: npm run lint
+
+      - name: Run tests
+        run: npm run test -- --reporters="default" --reporters="jest-junit" --reporters="jest-html-reporter"
+
+      - name: Save test evidence
+        uses: actions/upload-artifact@v4
+        with:
+          name: evidence-tests
+          path: |-
+            function-app/junit.xml
+            function-app/test-report.html

@@ -1,0 +1,19 @@
+{
+  "recommendations": [
+    // Azure extensions
+    "ms-azuretools.vscode-azurefunctions",
+    "ms-azuretools.vscode-bicep",
+    // Gherkin extension for the files in the features folder
+    "blodwynn.featurehighlight",
+    // Markdown extensions, includes Mermaid used for diagrams
+    "bierner.github-markdown-preview",
+    "davidanson.vscode-markdownlint",
+    // Coding extensions used in the Azure Functions
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "orta.vscode-jest",
+    // Syntax highlighting for Kusto queries. Not including language server extension,
+    // because writing/debugging Kusto queries is done in the Azure Portal.
+    "rosshamish.kuskus-kusto-syntax-highlighting"
+  ]
+}

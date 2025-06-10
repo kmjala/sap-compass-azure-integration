@@ -1,0 +1,46 @@
+name: Deploy branch
+on:
+  # Run on new commits on main
+  push:
+    branches:
+      # Only deploys the main branch. Feature branches can currently not be
+      # deployed, as they would process messages and send them to queues
+      # where the MES Azure Client doesn not listen to, i.e. our end-to-end
+      # tests in S4D/S4Q would fail.
+      - main
+
+  # Allow workflow to be run manually
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref_name }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    uses: ./.github/workflows/checks-subflow.yaml
+
+  deploy-dev:
+    needs: test
+    uses: ./.github/workflows/deploy-subflow.yaml
+    secrets: inherit
+    with:
+      environment: Development
+
+  deploy-val:
+    # Only runs after a successful deployment to the development environment
+    needs: deploy-dev
+    uses: ./.github/workflows/deploy-subflow.yaml
+    secrets: inherit
+    with:
+      environment: Validation
+
+  # Draft a release when the deployment was successful
+  draft-release:
+    # Only runs after a successful deployment to the validation environment
+    needs: deploy-val
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      # See https://github.com/wlgore/action-create-release
+      - uses: wlgore/action-create-release@v1

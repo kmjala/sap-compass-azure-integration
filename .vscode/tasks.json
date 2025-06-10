@@ -1,0 +1,30 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "func",
+      "label": "func: host start",
+      "command": "host start",
+      "problemMatcher": "$func-node-watch",
+      "isBackground": true,
+      "dependsOn": "npm watch",
+      "options": {
+        "cwd": "${workspaceFolder}/function-app"
+      }
+    },
+    {
+      "type": "shell",
+      "label": "npm watch",
+      "command": "npm run watch",
+      "problemMatcher": "$tsc-watch",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "isBackground": true,
+      "options": {
+        "cwd": "${workspaceFolder}/function-app"
+      }
+    }
+  ]
+}

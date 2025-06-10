@@ -1,0 +1,33 @@
+name: Deploy VAL
+on:
+  # Allow workflow to be run manually
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref_name }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    uses: ./.github/workflows/checks-subflow.yaml
+
+  deploy:
+    needs: test
+    uses: ./.github/workflows/deploy-subflow.yaml
+    with:
+      environment: Validation
+    secrets: inherit
+
+  # Draft a release when the deployment was successful
+  draft-release:
+    if: github.ref_name == 'main'
+    needs: deploy
+    runs-on: ubuntu-latest
+    permissions:
+      # Required to request the OIDC JWT Token
+      id-token: write
+      # Required when GH token is used to authenticate with private repo
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: wlgore/action-create-release@v1

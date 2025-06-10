@@ -1,0 +1,25 @@
+name: Deploy release
+
+on:
+  # Triggered when a release is published
+  release:
+    types:
+      - published
+
+  # Allow workflow to be run manually
+  workflow_dispatch:
+
+# This ensures we do not deploy two releases at the same time,
+# potentially messing up deployment procedures.
+concurrency:
+  group: ${{ github.workflow }}
+  # In-progress deployments are not cancelled, because we want
+  # deployments to PRD to complete cleanly.
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    uses: ./.github/workflows/deploy-subflow.yaml
+    secrets: inherit
+    with:
+      environment: Production

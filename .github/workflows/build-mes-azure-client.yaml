@@ -1,0 +1,47 @@
+name: Build MES Azure client
+on:
+  # Run on new commits on main and feature branches
+  push:
+    branches:
+      - main
+      - features/*
+      - COMPASS_Client
+    paths:
+      - SAP2COMPASS/**
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: windows-latest
+    strategy:
+      matrix:
+        project:
+          - SAP2COMPASS_MaterialMaster_Service
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup dotnet
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 8.x
+          global-json-file: ./SAP2COMPASS/global.json
+          # cache: true
+
+      - name: Install dependencies
+        run: dotnet restore
+        working-directory: ./SAP2COMPASS/${{ matrix.project }}
+
+      - name: Build with dotnet
+        run: >
+          dotnet publish 
+          --configuration Release 
+          --runtime win-x64
+          --self-contained true
+          -p:PublishSingleFile=true
+        working-directory: ./SAP2COMPASS/${{ matrix.project }}
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ matrix.project }}
+          path: ./SAP2COMPASS/${{ matrix.project }}/bin/Release/net8.0/win-x64/publish

@@ -1,0 +1,10 @@
+name: PR review
+on:
+  # Run on pull requests
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  checks:
+    uses: ./.github/workflows/checks-subflow.yaml

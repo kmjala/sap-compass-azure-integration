@@ -1,0 +1,139 @@
+name: Deploy subflow
+on:
+  workflow_call:
+    inputs:
+      environment:
+        type: string
+        required: true
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    environment: ${{ inputs.environment }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: function-app/package.json
+          cache-dependency-path: function-app/package-lock.json
+          cache: npm
+
+      - name: Install dependencies
+        working-directory: function-app
+        run: npm ci
+
+      - name: Create deployment package
+        working-directory: function-app
+        run: |
+          npm run build
+          npm prune --omit=dev
+
+          # Create the deployment package
+          zip -qr function-app.zip dist node_modules src host.json package.json
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: function-app
+          path: function-app/function-app.zip
+          overwrite: true
+          retention-days: 1
+
+  deploy-bicep:
+    runs-on: ubuntu-latest
+    environment: ${{ inputs.environment }}
+    permissions:
+      # Required to request the OIDC JWT Token
+      id-token: write
+      # Required when GH token is used to authenticate with private repo
+      contents: read
+      # Required for wlgore/azure-repository-login to read the job id, so that it can be re-run
+      actions: read
+    outputs:
+      functionAppName: ${{ steps.deploy-bicep.outputs.functionAppName }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Azure login
+        uses: wlgore/azure-repository-login@v1
+        id: azure-login
+        with:
+          azure-credentials: ${{ secrets.AZURE_CREDENTIALS }}
+          subscription-id: ${{ vars.AZURE_SUBSCRIPTION_ID }}
+          tenant-id: ${{ vars.AZURE_TENANT_ID }}
+          location: EastUS
+          bot-credentials: ${{ secrets.AZURE_REPOSITORY_LOGIN_BOT_CREDENTIALS }}
+          environment: ${{ inputs.environment }}
+
+      - name: Deploy Bicep
+        id: deploy-bicep
+        uses: azure/arm-deploy@v1
+        with:
+          scope: resourcegroup
+          resourceGroupName: ${{ steps.azure-login.outputs.resource-group }}
+          deploymentName: ${{ steps.azure-login.outputs.deployment-name }}
+          template: main.bicep
+          parameters: >
+            sapBaseUrl=${{ vars.SAP_BASE_URL }}
+            sapApiKey=${{ secrets.SAP_API_KEY }}
+            sapServiceBus=${{ vars.SAP_SERVICE_BUS }}
+            sapApiProdOrderConf2Delay=${{ vars.SAP_API_PRODNORDCONF2_DELAY }}
+          deploymentMode: Complete
+
+      - name: Write summary
+        env:
+          SUMMARY: |
+            # Deployment summary
+
+            - Resource group: [${{ steps.azure-login.outputs.resource-group }}](https://portal.azure.com/#@wlgore.onmicrosoft.com/resource/subscriptions/${{ vars.AZURE_SUBSCRIPTION_ID }}/resourceGroups/${{ steps.azure-login.outputs.resource-group }})
+            - Function App: [${{ steps.deploy-bicep.outputs.functionAppName }}](https://portal.azure.com/#@wlgore.onmicrosoft.com/resource/subscriptions/${{ vars.AZURE_SUBSCRIPTION_ID }}/resourceGroups/${{ steps.azure-login.outputs.resource-group }}/providers/Microsoft.Web/sites/${{ steps.deploy-bicep.outputs.functionAppName }}/appServices)
+            - Function App Principal Id: [${{ steps.deploy-bicep.outputs.functionAppPrincipalId }}](https://portal.azure.com/#@wlgore.onmicrosoft.com/resource/subscriptions/${{ vars.AZURE_SUBSCRIPTION_ID }}/resourceGroups/${{ steps.azure-login.outputs.resource-group }}/providers/Microsoft.Web/sites/${{ steps.deploy-bicep.outputs.functionAppName }}/msi)
+        run: echo "$SUMMARY" >> $GITHUB_STEP_SUMMARY
+
+  deploy-function-app:
+    runs-on: ubuntu-latest
+    needs:
+      - package
+      - deploy-bicep
+    environment: ${{ inputs.environment }}
+    permissions:
+      # Required to request the OIDC JWT Token
+      id-token: write
+      # Required when GH token is used to authenticate with private repo
+      contents: read
+      # Required for wlgore/azure-repository-login to read the job id, so that it can be re-run
+      actions: read
+      # Required for wlgore/create-change-request to read pull-request and deployment information
+      pull-requests: read
+      deployments: read
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/download-artifact@v4
+        with:
+          name: function-app
+
+      - name: Azure login
+        uses: wlgore/azure-repository-login@v1
+        id: azure-login
+        with:
+          azure-credentials: ${{ secrets.AZURE_CREDENTIALS }}
+          subscription-id: ${{ vars.AZURE_SUBSCRIPTION_ID }}
+          tenant-id: ${{ vars.AZURE_TENANT_ID }}
+          location: EastUS
+          bot-credentials: ${{ secrets.AZURE_REPOSITORY_LOGIN_BOT_CREDENTIALS }}
+          environment: ${{ inputs.environment }}
+
+      - name: Deploy Azure Function code
+        run: >
+          az functionapp deployment source config-zip
+          --resource-group ${{ steps.azure-login.outputs.resource-group }}
+          --name ${{ needs.deploy-bicep.outputs.functionAppName }}
+          --src function-app.zip
+
+      - name: Create ServiceNow CR
+        if: inputs.environment == 'Validation' || inputs.environment == 'Production'
+        uses: wlgore/create-change-request@v1
+        with:
+          credentials: ${{ secrets.SERVICENOW_CREDENTIALS }}
+          environment: ${{ inputs.environment }}
